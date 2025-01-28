@@ -10,86 +10,80 @@
 // 반응형 UI
 
 let randomNum = 0;
-let playBtn = document.getElementById("btn");
-let gameNum = document.getElementById("game-num");
-let resultArea = document.getElementById("result-area");
-let resetBtn = document.getElementById("reset-btn");
-let count = 5
+let pushNum = document.getElementById("push");
+let goStart = document.getElementById("go-area");
+let resultArea = document.getElementById("result-area")
+let count = 5;
 let gameOver = false
-let chanceArea = document.getElementById("chance-area")
-let history = [];
+let resetArea = document.getElementById("reset-area")
+let chanceArea = document.getElementById("chance")
+let recode = []
 
 
-playBtn.addEventListener("click",startGo);
-resetBtn.addEventListener("click",reset);
-gameNum.addEventListener("focus",function (){
-    gameNum.value = ""
-})
+goStart.addEventListener("click",startGo)
+resetArea.addEventListener("click",reset)
 
 
-function pickRandom(){
-
-    randomNum = Math.floor(Math.random()*100)+1 ;
-    console.log(randomNum);
-    }
-    
+function setNumber(){
+    randomNum = Math.floor(Math.random(randomNum)*100)+1;
+console.log(randomNum)
+}
 
 function startGo(){
-    let gameValue = gameNum.value
 
-
-    if(gameValue<1 || gameValue >100){
-        resultArea.textContent = "1과 100사이의 숫자를 입력하세요."
-        return;
-      
-    }
-
-    if(history.includes(gameValue)){
-        resultArea.textContent = "이미 입력된 숫자입니다. 다시 입력하세요."
+    let pushValue = pushNum.value;
+    if(pushValue <1 || pushValue> 100){
+        resultArea.textContent = "1과 100사이의 숫자를 입력해주세요."
         return;
     }
-   
-
+        if(recode.includes(pushValue)){
+            resultArea.textContent = "이미 입력된 숫자입니다. 다시 입력하세요."
+return;
+        }
 
 
     count --;
     chanceArea.textContent = `남은기회 : ${count}번`;
+   
 
 
-    if(gameValue<randomNum){
-    resultArea.textContent =    "UP!!"
-    }else if (gameValue>randomNum){
-       resultArea.textContent = "DOWN!"
-    }else {
+
+    if(pushValue < randomNum ){
+        resultArea.textContent = "UP!"
+    }else if(pushValue > randomNum)
+    {
+
+        resultArea.textContent = "DOWN!"
+    }
+    else{
         resultArea.textContent = "정답입니다!"
     }
-
-    history.push(gameValue)
+    recode.push(pushValue)
 
     if(count<1){
-        gameOver =true
-        resultArea.textContent = "게임이 종료 되었습니다."
+        gameOver = true;
+         resultArea.textContent = "게임이 종료 되었습니다."
+       
     }
     if(gameOver == true){
-        
-        playBtn.disabled = true;
+        goStart.disabled = true;
     }
-    
 }
 
-
 function reset(){
-    gameNum.value = ""
-    pickRandom();
-    resultArea = "결과값이 여기 나옵니다"
+    pushNum.value = ""
+   
+    setNumber()
+    resultArea.textContent = "결과 값이 여기 나옵니다"
+    
+    goStart.disabled = false
     gameOver = false;
-    playBtn.disabled = false;
     count = 5;
     chanceArea.textContent = `남은기회 : ${count}번`;
     
+    
 }
 
 
 
-
-pickRandom()
+setNumber()

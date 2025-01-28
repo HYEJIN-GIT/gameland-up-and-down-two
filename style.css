@@ -19,4 +19,49 @@ background-size: cover;
 .result-bk{
    margin-top:20px;
    margin-bottom:30 px;
+} 
+
+.ipt{
+  
+  border-radius: 30px;
+  border: 1px solid rgb(171, 166, 166);
+  
+  text-align: center;
+
+}
+
+.gogo{
+border-radius: 10px;
+border:2px solid rgb(168, 190, 187);
+text-align: center;
+height: 40px;
+width: 100px;
+}
+
+.gogo:hover{
+  border:2px solid rgb(211, 211, 222);
+  background-color: rgb(185, 178, 178);
+}
+
+.reset-style{
+  border-radius: 10px;
+  border:2px solid rgb(168, 190, 187);
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  }
+  
+  .reset-style:hover{
+    border:2px solid rgb(211, 211, 222);
+    background-color: rgb(185, 178, 178);
+  
+  
+  
+  }
+
+
+@media screen and (max-width: 48rem){
+  .ipt{
+    max-width: 500px;
+  }
 }
