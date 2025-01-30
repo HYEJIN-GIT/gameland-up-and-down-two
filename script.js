@@ -18,10 +18,14 @@ let gameOver = false
 let resetArea = document.getElementById("reset-area")
 let chanceArea = document.getElementById("chance")
 let recode = []
+let resultImg = document.querySelector(".main-img")
 
 
 goStart.addEventListener("click",startGo)
 resetArea.addEventListener("click",reset)
+pushNum.addEventListener("focus",deleteNum)
+resultArea.style.h2
+
 
 
 function setNumber(){
@@ -34,10 +38,12 @@ function startGo(){
     let pushValue = pushNum.value;
     if(pushValue <1 || pushValue> 100){
         resultArea.textContent = "1과 100사이의 숫자를 입력해주세요."
+        resultImg.src = "https://images.khan.co.kr/article/2016/07/29/l_20160729020013350003150313.gif"
         return;
     }
         if(recode.includes(pushValue)){
             resultArea.textContent = "이미 입력된 숫자입니다. 다시 입력하세요."
+            resultImg.src = "https://r2.jjalbot.com/2023/03/yL2o_4Yqv.gif"
 return;
         }
 
@@ -49,20 +55,25 @@ return;
 
 
     if(pushValue < randomNum ){
+        
         resultArea.textContent = "UP!"
+        resultImg.src = "https://file3.instiz.net/data/file3/2018/03/01/a/8/b/a8bcb551de33c9d410920e0ce5570301.gif"
     }else if(pushValue > randomNum)
     {
 
         resultArea.textContent = "DOWN!"
+        resultImg.src = "https://lh3.googleusercontent.com/proxy/ULjapbq_EIWBBAuc163NjX_pCpF_C7ESr0zp4B2cTO8gi1KZ8o0szPtQ35KnWkf8PHB1Xfs6hv_beQnB71MV1_GS5g6OOnaxm52mzKZBz9bIZNNapVRBsYNnyu6TAxi9wLN3--HL"
     }
     else{
         resultArea.textContent = "정답입니다!"
+        resultImg.src = "https://upload-os-bbs.hoyolab.com/upload/2024/09/21/104401847/726d2870935ab658a1374afb57d9897d_1797245275993196059.gif"
     }
     recode.push(pushValue)
 
     if(count<1){
         gameOver = true;
          resultArea.textContent = "게임이 종료 되었습니다."
+         resultImg.src = "https://media.tenor.com/kQb5z-x4qpkAAAAM/game-over-insert-coins.gif"
        
     }
     if(gameOver == true){
@@ -70,7 +81,13 @@ return;
     }
 }
 
+function deleteNum(){
+    pushNum.value = ""
+}
+
+
 function reset(){
+    resultImg.src = src="https://file3.instiz.net/data/file3/2018/05/14/4/5/4/454ba1e07a5c51c8fbe0e4776e5e974b.gif"
     pushNum.value = ""
    
     setNumber()
@@ -83,7 +100,6 @@ function reset(){
     
     
 }
-
 
 
 setNumber()
