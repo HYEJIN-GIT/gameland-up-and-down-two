@@ -132,6 +132,7 @@ let history = []
 
 goBtn.addEventListener("click",goPush)
 reset.addEventListener("click",resetBtn)
+inputValue.addEventListener("focus",function(){inputValue.value = ""})
 
 
 
