@@ -125,14 +125,13 @@ let resultImg = document.querySelector(".main-img")
 let chance = 5
 let chanceArea = document.getElementById("chance")
 let reset = document.getElementById("reset-area")
-let history = []
-
 
 
 
 goBtn.addEventListener("click",goPush)
 reset.addEventListener("click",resetBtn)
-inputValue.addEventListener("focus",function(){inputValue.value = ""})
+
+
 
 function random(){
     randomNum = Math.floor(Math.random()*100)+1
@@ -143,16 +142,6 @@ function random(){
 function goPush(){
     let pushValue = inputValue.value
 
-    if(pushValue<1 || pushValue>100){
-         resultImg.src = "https://images.khan.co.kr/article/2016/07/29/l_20160729020013350003150313.gif"
-        resultArea.textContent = "1과 100사이 값을 입력하세요."
-        return
-    }
-    if(history.includes(pushValue)){
-        resultImg.src = "https://r2.jjalbot.com/2023/03/yL2o_4Yqv.gif"
-         resultArea.textContent = "이미 입력된 값입니다. 다시 입력하세요."
-         return
-    }
 
 
     chance--
@@ -168,11 +157,12 @@ function goPush(){
         resultArea.textContent = "정답입니다!"
         resultImg.src = "https://upload-os-bbs.hoyolab.com/upload/2024/09/21/104401847/726d2870935ab658a1374afb57d9897d_1797245275993196059.gif"
     }
-    history.push(pushValue)
+  
     if(chance<1){
         goBtn.disabled = true
     }
 }
+
 function resetBtn(){
     inputValue.value = ""
     resultImg.src = src="https://file3.instiz.net/data/file3/2018/05/14/4/5/4/454ba1e07a5c51c8fbe0e4776e5e974b.gif"
