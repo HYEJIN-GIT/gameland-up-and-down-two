@@ -1,4 +1,4 @@
-body{
+/* body{
 background-size: cover;
   height: 100vh;
   display: flex;
@@ -108,4 +108,16 @@ width: 120px;
    max-width: 280px;
     max-height: 170px;
   }
+} */
+
+
+body {
+  margin: 0px;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(image/mudo.jpg)
 }
