@@ -121,3 +121,106 @@ body {
   align-items: center;
   background-image: url(image/mudo.jpg)
 }
+
+.container{
+  border: 10px solid rgb(188, 185, 186);
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container h1 {
+  color: rgb(78, 135, 115);
+  font-family:monospace;
+  margin-bottom: 30px;
+  font-style: italic;
+  text-shadow: 2px 2px #b8b2b2;
+  
+
+}
+
+.main-img{
+  width:  450px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.result-area{
+  color : slategray;
+  font-size: 25px;
+  padding: 1rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+.chances{
+  color : rgb(126, 159, 192);
+  font-size: 18px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 30px;
+}
+.input-btn{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.ipt{
+  border-radius: 10px;
+  border: 2px solid rgb(79, 113, 146);
+  width: 300px;
+  height: 35px;
+  margin-right:30px;
+  text-align: center;
+}
+
+.goBtn{
+  width: 100px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 10px;
+  border: 2px solid rgb(142, 184, 225);
+  background-color: rgb(204, 224, 251);
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #262626, 1px -1px 0  #262626, -1px 1px 0  #262626, 1px 1px 0 #262626;
+}
+
+
+.goBtn:hover{
+  background-color: rgb(221, 229, 240);
+ 
+}
+
+.resetBtn{
+  margin-top: 20px;
+  width: 100px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 10px;
+  border: 2px solid rgb(142, 184, 225);
+  background-color: rgb(204, 224, 251);
+  color: rgb(255, 255, 255);
+  text-shadow: -1px -1px 0 #262626, 1px -1px 0  #262626, -1px 1px 0  #262626, 1px 1px 0 #262626;
+}
+
+
+.resetBtn:hover{
+  background-color: rgb(221, 229, 240);
+ 
+}
+
+@media screen and (max-width: 48rem){
+  .main-img{
+    max-width: 260px;
+     max-height: 170px;
+   }
+   
+   .ipt{
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+}

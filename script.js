@@ -178,7 +178,7 @@ function goPush(){
 function resetBtn(){
     inputValue.value = ""
     resultImg.src = src="https://file3.instiz.net/data/file3/2018/05/14/4/5/4/454ba1e07a5c51c8fbe0e4776e5e974b.gif"
-    resultArea.textContent = "결과 값이 여기 나옵니다"
+    resultArea.textContent = "RESULT VALUE?"
     goBtn.disabled = false
     chance = 5
     chanceArea.textContent = `남은 기회 : ${chance}번`
