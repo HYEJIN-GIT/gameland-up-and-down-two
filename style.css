@@ -7,6 +7,7 @@ body{
   margin: 0px;
   background-color: rgb(205, 223, 240);
   bottom: 0;
+
 }
 
 .bar-area{
@@ -38,23 +39,25 @@ body{
 
 }
 
+
+
 .image-area{
 
-margin: 50px;
+margin: 30px;
 }
 
 .h1-area{
-padding-top: 70px; 
+padding-top: 50px; 
  text-align: center;
   font-family: 'YeongamWolchulsan.ttf';
-animation: motion 1.5s linear 0s infinite alternate;  
+animation: motion 0.4s linear 0s infinite alternate;  
 color: white;
 text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
 }
 
 @keyframes motion {
 0% {margin-top: 0px;}
-100% {margin-top: 10px;}
+100% {margin-top: 3px;}
 }
 
 .h1-section{
@@ -94,6 +97,35 @@ text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
   color: rgb(134, 93, 205);
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
+#chance{
+  margin: 20px;
+  font-family: 'YeongamWolchulsan.ttf';
+  color: rgb(4, 118, 249);
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+
+#input-area{
+  width: 400px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  text-align: center;
+  font-family: 'YeongamWolchulsan.ttf';
+  
+  
+}
+
+#result-area{
+ text-align: center; 
+ font-family: 'YeongamWolchulsan.ttf';
+ color: rgb(4, 118, 249);
+ font-size: 20px;
+ padding-left: 15px;
+ text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
 
 
 
