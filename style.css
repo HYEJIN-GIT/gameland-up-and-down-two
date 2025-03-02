@@ -1,226 +1,163 @@
-/* body{
-background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(image/mudo.jpg)
+@font-face {
+  font-family: 'YeongamWolchulsan.ttf';
+  src: url('./font/YeongamWolchulsan.ttf') format('truetype')
 }
 
-.container{
-    text-align: center;
-    border: 20px solid rgb(210, 203, 203);
-    border-radius: 20px;
-    padding : 20px;
-}
-
-.result-bk{
-   margin-top:20px;
-   margin-bottom:30 px;
-} 
-.title{
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(121, 117, 242);
-}
-
-.pre{
-  font-size: 50px;
-  font-weight: bold;
-  color: rgba(72, 108, 169, 0.818);
-  margin-bottom: 30px;
-
-}
-
-.sub{
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(119, 159, 228, 0.818);
-  margin-bottom: 30px;
-
-}
-
-
-.ipt{
-  
-  border-radius: 30px;
-  border: 1px solid rgb(171, 166, 166);
-  width: 400px;
-  height: 50px;
-  text-align: center;
-  margin-bottom: 20px;
-
-}
-
-.gogo{
-border-radius: 10px;
-border:2px solid rgb(220, 227, 227);
-text-align: center;
-height: 40px;
-width: 120px;
-
-}
-
-.gogo:hover{
-  border:2px solid rgb(211, 211, 222);
-  background-color: rgb(185, 178, 178);
-}
-
-.reset-style{
-  border-radius: 10px;
-  border:2px solid rgb(220, 227, 227);
-  text-align: center;
-  height: 40px;
-  width: 100px;
-  }
-  
-  .reset-style:hover{
-    border:2px solid rgb(211, 211, 222);
-    background-color: rgb(185, 178, 178);
-  
-  
-  
-  }
-
-  .main-img{
-    width:  450px;
-    height: 250px;
-  }
-
-@media screen and (max-width: 48rem){
-  .ipt{
-    max-width: 300px;
-  }
-
-  .pre{
-    margin-top: 10px;
-    font-size: 30px;
-  }
-  .title{
-    font-size: 20px;
-  }
-  .sub{
-    font-size: 15px;
-  }
-
-  .main-img{
-   max-width: 280px;
-    max-height: 170px;
-  }
-} */
-
-
-body {
+body{
   margin: 0px;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(image/mudo.jpg)
+  background-color: rgb(205, 223, 240);
+  bottom: 0;
 }
 
+.bar-area{
+  background-color: rgb(167, 206, 239);
+  font-family:'YeongamWolchulsan.ttf' ;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px;
+ 
+}
+.title-name{
+  padding-left: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+.x-area{
+  background-color: aliceblue;
+  height: 24px;
+  width: 24px;
+
+  text-align: center;
+}
 .container{
-  border: 10px solid rgb(188, 185, 186);
-  padding: 20px;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.container h1 {
-  color: rgb(78, 135, 115);
-  font-family:monospace;
-  margin-bottom: 30px;
-  font-style: italic;
-  text-shadow: 2px 2px #b8b2b2;
-  
-
-}
-
-.main-img{
-  width:  450px;
-  height: 250px;
-  margin-bottom: 50px;
-}
-
-.result-area{
-  color : slategray;
-  font-size: 25px;
-  padding: 1rem;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  
-}
-
-.chances{
-  color : rgb(126, 159, 192);
-  font-size: 18px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-bottom: 30px;
-}
-.input-btn{
   display: flex;
+  align-items: center;
   justify-content: center;
+  height: 100vh;
+
+  flex-direction: column;
+
+
+
+}
+
+
+.main{
+  text-align: center;
+ 
+}
+
+.image-area{
+ margin: 20px;
+
+}
+
+.h1-area{
+  padding-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+ 
+
+
+  font-family: 'YeongamWolchulsan.ttf';
+animation: motion 0.4s linear 0s infinite alternate;  
+color: white;
+text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
+}
+
+@keyframes motion {
+0% {margin-top: 0px;}
+100% {margin-top: 10px;}
+}
+
+.h1-section{
+ background-color: rgb(224, 232, 239);
+ border: 1px solid lightblue;
+ position: relative;
+}
+.x-area-two{
+  background-color: aliceblue;
+  height: 24px;
+  width: 24px;
+float: right;
+  text-align: center;
+}
+.heart{
+  color: white;
+}
+
+.btn-area{
+  margin-top: 60px;
+ 
+  padding: 20px;
+}
+
+#btn{
+  border: 1px solid rgb(167, 214, 231);
+  color: rgb(120, 158, 194);
+  font-family: 'YeongamWolchulsan.ttf';
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 20px;
+
+ 
+
+}
+
+#btn:hover{
+  color: rgb(134, 93, 205);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.image-mode{
+  background-color: rgb(224, 232, 239);
+  border: 1px solid lightblue;
+  width:400px;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   
 }
 
-.ipt{
-  border-radius: 10px;
-  border: 2px solid rgb(79, 113, 146);
-  width: 300px;
-  height: 35px;
-  margin-right:30px;
-  text-align: center;
-}
-
-.goBtn{
-  width: 100px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-radius: 10px;
-  border: 2px solid rgb(142, 184, 225);
-  background-color: rgb(204, 224, 251);
-  color: rgb(255, 255, 255);
-  text-shadow: -1px -1px 0 #262626, 1px -1px 0  #262626, -1px 1px 0  #262626, 1px 1px 0 #262626;
-}
-
-
-.goBtn:hover{
-  background-color: rgb(221, 229, 240);
- 
-}
-
-.resetBtn{
-  margin-top: 20px;
-  width: 100px;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-radius: 10px;
-  border: 2px solid rgb(142, 184, 225);
-  background-color: rgb(204, 224, 251);
-  color: rgb(255, 255, 255);
-  text-shadow: -1px -1px 0 #262626, 1px -1px 0  #262626, -1px 1px 0  #262626, 1px 1px 0 #262626;
-}
-
-
-.resetBtn:hover{
-  background-color: rgb(221, 229, 240);
- 
-}
 
 @media screen and (max-width: 48rem){
-  .main-img{
-    max-width: 260px;
-     max-height: 170px;
-   }
-   
-   .ipt{
-    max-width: 250px;
-    margin-bottom: 20px;
+  .container{
+     bottom: 0;
   }
 
-  .container h1 {
-    font-size: 20px;
-    text-align: center;
+  .bar-area {
+      width: 100%;
   }
+.image-mode{
+ margin-top: 20px;
+  width: 200px;
+ 
+  margin-left:55px;
+}
+.image-area{
+  width: 50px;
+  height: 50px;
+}
   
+.h1-section{
+  margin-left: 30px;
+  width: 250px;
+  height: 130px;
+ 
+}
+
+.h1-area{
+  font-size: 20px;
+
+ padding:15px;
+}
+
+.btn-area{
+
+display: flex;
+bottom: 0;
+}
 }
