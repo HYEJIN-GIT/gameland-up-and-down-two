@@ -30,39 +30,24 @@ body{
 
   text-align: center;
 }
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
 
-  flex-direction: column;
-
-
-
-}
 
 
 .main{
   text-align: center;
- 
+
 }
 
 .image-area{
- margin: 20px;
 
+margin: 50px;
 }
 
 .h1-area{
-  padding-top: 50px;
-  margin-bottom: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
- 
-
-
+padding-top: 70px; 
+ text-align: center;
   font-family: 'YeongamWolchulsan.ttf';
-animation: motion 0.4s linear 0s infinite alternate;  
+animation: motion 1.5s linear 0s infinite alternate;  
 color: white;
 text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
 }
@@ -75,24 +60,9 @@ text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
 .h1-section{
  background-color: rgb(224, 232, 239);
  border: 1px solid lightblue;
- position: relative;
-}
-.x-area-two{
-  background-color: aliceblue;
-  height: 24px;
-  width: 24px;
-float: right;
-  text-align: center;
-}
-.heart{
-  color: white;
+
 }
 
-.btn-area{
-  margin-top: 60px;
- 
-  padding: 20px;
-}
 
 #btn{
   border: 1px solid rgb(167, 214, 231);
@@ -102,62 +72,31 @@ float: right;
   height: 40px;
   border-radius: 20px;
   margin: 20px;
+}
 
- 
 
+
+#reset-btn{
+  border: 1px solid rgb(167, 214, 231);
+  color: rgb(120, 158, 194);
+  font-family: 'YeongamWolchulsan.ttf';
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 20px;
 }
 
 #btn:hover{
   color: rgb(134, 93, 205);
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-.image-mode{
-  background-color: rgb(224, 232, 239);
-  border: 1px solid lightblue;
-  width:400px;
-  text-align: center;
-  margin-left: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  
+#reset-btn:hover{
+  color: rgb(134, 93, 205);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
 
 
 @media screen and (max-width: 48rem){
-  .container{
-     bottom: 0;
-  }
-
-  .bar-area {
-      width: 100%;
-  }
-.image-mode{
- margin-top: 20px;
-  width: 200px;
  
-  margin-left:55px;
-}
-.image-area{
-  width: 50px;
-  height: 50px;
-}
-  
-.h1-section{
-  margin-left: 30px;
-  width: 250px;
-  height: 130px;
- 
-}
-
-.h1-area{
-  font-size: 20px;
-
- padding:15px;
-}
-
-.btn-area{
-
-display: flex;
-bottom: 0;
-}
 }
