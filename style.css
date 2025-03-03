@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'YeongamWolchulsan.ttf';
   src: url('./font/YeongamWolchulsan.ttf') format('truetype')
@@ -6,7 +7,7 @@
 body{
   margin: 0px;
   background-color: rgb(205, 223, 240);
-  bottom: 0;
+  
 
 }
 
@@ -43,23 +44,31 @@ body{
 
 .image-area{
 
-margin: 30px;
+margin-top: 50px;
+margin-bottom: 40px;
 }
 
 .h1-area{
-padding-top: 50px; 
- text-align: center;
+padding-top: 100px;
+padding-left: 650px; 
+ 
   font-family: 'YeongamWolchulsan.ttf';
+
 animation: motion 0.4s linear 0s infinite alternate;  
 color: white;
 text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
+  overflow: hidden;
+			white-space: nowrap;
+			width: 0;
+		
+			animation: typing steps(12, end) 2s forwards infinite;
 }
 
-@keyframes motion {
-0% {margin-top: 0px;}
-100% {margin-top: 3px;}
-}
+@keyframes typing {
+  from{width:0 }
+  to{width: 100%}
 
+}
 .h1-section{
  background-color: rgb(224, 232, 239);
  border: 1px solid lightblue;
@@ -87,6 +96,7 @@ text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
   height: 40px;
   border-radius: 20px;
   margin: 20px;
+ 
 }
 
 #btn:hover{
@@ -103,6 +113,7 @@ text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
   font-family: 'YeongamWolchulsan.ttf';
   color: rgb(4, 118, 249);
   text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+  padding-top: 20px;
 }
 
 
@@ -123,12 +134,25 @@ text-shadow: -2px 0 #6d7caa, 0 2px #6d7caa, 2px 0 #6d7caa, 0 -2px #6d7caa;
  color: rgb(4, 118, 249);
  font-size: 20px;
  padding-left: 15px;
+ padding-top: 20px;
  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 }
 
+.footer{
+  margin-top: 36px;
 
+  background-color: rgb(124, 180, 234);
+  display: flex;
+  justify-content: space-around;
+  font-family: 'YeongamWolchulsan.ttf';
+  color: white;
+  text-shadow: -1px 0 #000000, 0 1px#000000, 1px 0#000000, 0 -1px #000000;
+}
 
 
 @media screen and (max-width: 48rem){
- 
+ .h1-area{
+  font-size: 25px;
+  padding-left: 80px; 
+ }
 }
